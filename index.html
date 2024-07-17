@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Background and Overlay -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <!-- Loader Container -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container" id="weatherContainer" style="display:none;">
         <h1>Weather App</h1>
         <div class="search">
-            <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchButton">Search</button>
+            <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
         </div>
         <div class="weather-info">
+            <img id="weatherIcon" src="" alt="Weather Icon">
             <h2 id="cityName"></h2>
             <p id="temperature"></p>
             <p id="description"></p>
             <p id="humidity"></p>
             <p id="windSpeed"></p>
         </div>
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></p>
+        </footer>
     </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
