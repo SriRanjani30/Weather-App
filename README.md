@@ -5,3 +5,5 @@
 5. Transfer the control to the Project Directory.
 6. Run "index.html".
 7. Weather App will now open in your Browser.
+
+![Screenshot (3468)](https://github.com/user-attachments/assets/416d1bd2-4bc1-4895-867d-006760c03e15)
